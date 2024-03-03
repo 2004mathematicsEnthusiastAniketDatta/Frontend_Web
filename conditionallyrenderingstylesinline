@@ -1,0 +1,1 @@
+if a required field in a form is empty , we may require  to show red colored border of the box along with error message ..... inline styling is required
