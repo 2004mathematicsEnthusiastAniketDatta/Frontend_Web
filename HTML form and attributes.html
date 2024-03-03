@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_and_form attributes</title>
+    <style>
+        dis{
+            display: flex;
+            margin:5px;
+            padding: 5px;
+        }
+        dis1{
+            margin:5px;
+            padding: 5px;
+        }
+        dis2{
+            margin:5px;
+            padding: 5px;
+        }        
+        dis3{
+            margin:5px;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <div class="firstform">
+        <form action="/forms.php" method="GET" accept-charset="UTF-16"  autocomplete="on" enctype="application/x-www-form-urlencoded" rel="opener"><!--url can be fed in action of forms-->
+            <label for="name" >Name:</label>
+            <input type="text" id="name" name="name" value="John Doe" placeholder="full name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="john@examplemail.com" placeholder="email"> 
+            <dis>
+           <dis1><button type="submit">Submit</button></dis1>
+           <dis2><button type="reset">Reset</button></dis2>
+           <dis3><button type="menu">menu</button></dis3>
+        </dis>
+        </form>
+    </div>
+    <div class="secondform" accept-charset="UTF-16" aria-autocomplete="on" a>
+        <form action="/forms.php" method="POST">       
+    
+   <!--method="POST" is encrypted and not visible in url link--> 
+   <!--label for name is same as id of input type text-->
+</body>
+</html>
