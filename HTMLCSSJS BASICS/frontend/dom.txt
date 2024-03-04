@@ -1,0 +1,10 @@
+for each of the resources in HTML , seperate requests are being sent to Server from the client
+Rendering the HTML DOCUMENT after the Requests are being read by the server and responses are sent back to client...These Responses are HTML documents ...... Document Object Model .......
+ html ->body->h1 , img
+ ^
+ |
+ head
+ ^
+ |
+ title
+ 
