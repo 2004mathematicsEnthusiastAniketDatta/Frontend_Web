@@ -1,0 +1,11 @@
+{
+    "name": "Aniket",
+    "score":11.75,
+    "isAdmin":false,
+    "license":null,
+    "shopItems":["food","clothes","sunflower oil",{"hello":"World"}], 
+    "myObject":{
+        "name":"nested",
+        "c":15.9
+    }
+}
