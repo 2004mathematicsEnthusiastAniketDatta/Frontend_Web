@@ -21,8 +21,20 @@
         dis3{
             margin:5px;
             padding: 5px;
+            margin
         }
-        
+        .firstform{
+            margin:5px;
+            padding: 5px;
+        }
+        .usbox{
+            margin:5px;
+            padding: 5px;
+        }
+        passbox{
+            margin:5px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
@@ -40,8 +52,114 @@
         </dis>
         </form>
     </div>
-    <div class="secondform" accept-charset="UTF-16" aria-autocomplete="on" a>
-        <form action="/forms.php" method="POST">       
+    <div class="secondform">
+        <form action="/forms.php" method="POST" accept-charset="UTF-16" aria-autocomplete="on"
+        enctype="application/x-www-form-urlencoded" rel="opener">
+        <div class="usbox"> 
+        <label for="username">username</label>
+          <input type="text" id="username" name="username" value="04john" placeholder="username"><br/>
+        </div>
+            <label for="password"><pre style="display: inline;"> password</pre></label>
+            <passbox>
+            <input type="password" id="password" name="password" value="password_&" placeholder="password" pattern="password_&">
+            </passbox>
+            <pre>
+                <button>Login</button>
+            </pre>
+            <pre>
+<label for="Development">Development</label><input type="checkbox" name="Development" id="Development">
+<label for="Testing">Testing</label><input type="checkbox" name="Testing" id="Testing">
+<button type="submit" style="color: rgb(2, 2, 5); background-color: rgb(226, 234, 234);">Submit</button>
+<label for="date">Date of Birth:</label><input type="date" name="date" id="date">
+<label for="datetime">registration date:</label>
+<input type="datetime-local" name="datetime" id="datetime">
+<label for="email">email: </label><input type="email" name="email" id="email">
+<label for="fileupload">upload file</label>
+<input type="file" name="fileupload" id="fileupload" accept=".j
+<label for="month">Month</label>
+<input type="month" name="month" id="month">
+<label for="number">Number</label>
+<input type="number" name="number" id="number">
+<label for="password" >password</label>
+<input type="password" name="password" id="password">
+<label for="hiddencode">Hidden Code</label>
+<input type="text" name="hidden" id="hidden" maxlength="8" minlength="3">
+<label for="search">Search</label>
+<input type="search" name="search" id="search">
+<label for="tel">tel</label>
+<input type="tel" name="tel" id="tel">
+<label for="time">time</label>
+<input type="time" name="time" id="time" step="1">
+<label for="url">url</label>
+<input type="url" name="url" id="url">
+<label for="week">week</label>
+<input type="week" name="week" id="week">
+<label for="radio">radio</label>
+<input type="radio" name="radio" id="radio">
+<label for="range">range</label>
+<input type="range" name="range" id="range">
+<label for="color">color</label>
+<input type="color" name="color" id="color">
+<label for="hidden">hidden</label>
+<input type="hidden" name="hidden" id="hidden">
+<label for="submit">submit</label>
+<input type="submit" name="submit" id="submit">
+<label for="reset">reset</label>
+<input type="reset" name="reset" id="reset">
+<label for="button">button</label>
+<input type="button" name="button" id="button">
+<label for="menu">menu</label>
+<input type="menu" name="menu" id="menu">
+<label for="image">image</label>
+<input type="image" name="image" id="image">
+<label for="submit">submit</label>
+<input type="submit" name="submit" id="submit">
+<label for="reset" >reset</label>
+<input type="reset" name="reset" id="reset">
+<label for="button">button</label>
+<input type="button" name="button" id="button">
+<label for="menu">menu</label>
+<input type="menu" name="menu" id="menu">
+<label for="image">image</label>
+<input type="image" name="image" id="image">
+<label for="submit">submit</label>
+<input type="submit" accept=".pdf,.jpeg,.jpg,.png">
+
+<label for="radios">Hello</label>
+<input type="radio" name="radios" id="radios" checked>
+<input type="image" src="" alt="no image">
+        </pre> <!--Web crawlers can lead to problems-->
+        <label for="search">Search</label>
+        <input type="search" name="search" id="search" dirname="ltr"><br/>
+        <pre>
+        <label for="tel">tel</label>
+        <input type="tel" name="tel" id="tel" dirname="ltr" disabled placeholder="disabled tele" value="previous contact">
+<label for="capture">capture</label>        <input type="file" name="file" id="file" capture>
+<label for="govtid">Government id</label>
+<input type="file" name="govtid" id="govtid" multiple required> <!--allows multiple files to be uploaded--> 
+<!-- readonly attribute-->
+<select name="foods" id="foods">
+    <option value="Burger">Burger</option>
+    <option value="Pizza">Pizza</option>
+    <option value="Pasta">Pasta</option>
+    <option value="Noodles">Noodles</option>
+    <option value="Rice">Rice</option>
+    <option value="Biryani">Biryani</option>
+</select>
+<button type="submit">Submit</button>
+
+<input list="foods" name="foods">
+<datalist id="foods">
+    <option value="Pizza">Pizza</option>
+    <option value="Pasta">Pasta</option>
+    <option value="Noodles">Noodles</option>
+    <option value="Rice">Rice</option>
+</datalist>
+<button type="submit">Submit</button>
+</input>
+    </pre>
+    </form>
+    
     
    <!--method="POST" is encrypted and not visible in url link--> 
    <!--label for name is same as id of input type text-->
