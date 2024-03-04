@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    background: transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body{
+    padding:0;
+    margin: auto; /*The cards if placed in such a position which is equally margined from left and right may look better*/
+    border: 2px solid lightgray;
+    font-size: 0.9rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    /* text-decoration: none; */
+    list-style-type: disc;
+    color: black;
+    background-color: white;
+  }
+  .center{
+    text-align: center;
+  }
+  .hidden{
+   border-radius:14px;
+   margin:10px 15px;
+   /* width:300px; */
+   list-style-type: disc;
+   box-sizing: border-box;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .hidden{
+    /* width:270px; */
+    margin:10 15px;
+    padding: 10px;
+    border:3px solid lightgray;
+    border-radius: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    list-style-type: disc;
+  }
+  
+  
+  
