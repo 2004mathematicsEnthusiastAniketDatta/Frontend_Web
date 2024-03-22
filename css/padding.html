@@ -1,0 +1,57 @@
+<!--Right click then  inspect element then CSS BOX  model in styles-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>padding</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(100, 197, 197);
+      }
+      .box {
+        margin: 10px;
+        border: 2px solid blue;
+
+        box-sizing: border-box;
+        padding: 15px;
+        height: 150px;
+        width: 150px;
+        background-color: #e34040;
+        color: blue;
+        transform: rotate(45deg);
+        transform: rotateX(45deg);
+        transform: rotateY(45deg);
+        transform: rotateZ(45deg);
+        transform: rotateX(45deg);
+        transform: rotateX(30deg);
+        transform: rotateY(60deg);
+        transform: rotateZ(90deg);
+        translatex: 25px;
+        translatey: 75px;
+        translatez: -100px;
+        transform: scale(0.5);
+        transform: skewX(30deg) skewY(30deg);
+        animation: cubic-bezier(1, 0, 0, 1) forwards;
+        transition: all ease-in-out 1s;
+      }
+      .box:hover {
+        transform: scale(1.2) rotate(90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
