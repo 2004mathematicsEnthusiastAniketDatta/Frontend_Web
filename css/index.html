@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic syntax</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      pre {
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        padding: 20px;
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+        background-color: black;
+        color: white;
+        animation-name: ltr;
+        animation-duration: 2s;
+      }
+      .hw {
+        animation-name: rtl;
+        animation-duration: 2s;
+        text-transform: capitalize;
+        /*text-decoration-color: calc(100% ,- 50%);*/
+        border: 2px solid red;
+        padding: 5px;
+        margin: 5px;
+        box-sizing: border-box;
+        /*animation-iteration-count: infinite;*/
+        text-rendering: geometricPrecision;
+        text-overflow: clip;
+        text-shadow: 2px 2px 2px #ff0000;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        font-variant: small-caps;
+        font-stretch: condensed;
+        font-style: italic;
+        font-family: "Courier New", Courier, monospace;
+        font-kerning: normal;
+        font-feature-settings: "liga" on;
+        font-size-adjust: 0.5;
+        font-stretch: condensed;
+        font-variant: small-caps;
+        font-variant-ligatures: common-ligatures;
+        font-variant-caps: all-small-caps;
+        font-variant-numeric: oldstyle-nums;
+        font-variant-east-asian: ruby;
+        font-variant-alternates: historical-forms;
+        font-variant-position: subscript;
+        font-variant-caps: all-small;
+      }
+      @keyframes ltr {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      @keyframes rtl {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div(can be a rectangular box in webapps) is present where more than one element is present and div is block level element   -->
+    <pre
+      style="
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    ><span class="hw" style="animation-name: rtl; animation-duration: 2 sec;">hello world!</span></pre>
+    <!-- priority of inline css is higher than internal css which is higher than external CSS. 
+            so, the animation is expected to  work as right to left and then left to right but this does not seem to happen -->
+    <!-- if we want to override the animation then we have to use !important.
+    -->
+  </body>
+</html>

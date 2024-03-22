@@ -1,0 +1,72 @@
+<!-- Not practical because the page is not mobile responsive
+  Red: UI, Viewport: 150rem, 150rem, 5px solid red; viewport : the visible part of the UI in the browser window
+  margin: rgb(135, 206, 235);"
+  border: 5px solid rgb(205, 7, 191);
+  padding:X px #1adbbb;
+  content: content in blue -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>margin</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .one {
+        height: 150rem;
+        width: 150rem;
+        background-color: red;
+        border: 5px solid red;
+      }
+      .two {
+        height: 256px;
+        width: 256px;
+        position: relative;
+      }
+      .three {
+        height: 128px;
+        width: 128px;
+        position: absolute;
+        /* top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%; */
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one" style="color: rgb(22, 37, 207)">
+      <div
+        class="two"
+        style="
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: rgb(135, 206, 235);
+        "
+      >
+        <div
+          class="three"
+          style="
+            color: blue;
+            background-color: #1adbbb;
+            padding: 5px;
+            margin: 5px;
+            border: 5px solid rgb(205, 7, 191);
+          "
+        >
+          content
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
