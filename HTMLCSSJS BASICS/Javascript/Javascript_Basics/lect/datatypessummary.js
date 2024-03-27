@@ -10,7 +10,6 @@ const id=Symbol('123');
 console.log(sym==id); //false
 const bigNumber = 345654356754n;
 console.log(typeof bigNumber);
-
 //Non-Primitive Data Types or Reference types: Object, Array, Function, Date, RegExp, Map, Set, WeakMap, WeakSet, Error, Math, JSON, Promise, Proxy, Reflect, Intl, WebAssembly, ArrayBuffer, SharedArrayBuffer, DataView, TypedArray, Float32Array, Float64Array, Int8Array, Int16Array, Int32Array, Uint8Array, Uint8ClampedArray, Uint16Array, Uint32Array, BigInt64Array, BigUint64Array , etc.
 
 const heroes=["shaktiman","naagraj","doga"];
@@ -24,5 +23,3 @@ const myFunction=function(){
 console.log(typeof myFunction);
 console.log(typeof myObj === typeof outsideTemp); //true as null is object
 console.log(myFunction);
-
-
