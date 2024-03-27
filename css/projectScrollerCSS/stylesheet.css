@@ -97,7 +97,7 @@ html, body {
 }
 
 #text-content::-webkit-scrollbar-thumb {
-    background-color: orangered;
+    background-color: #ffffff;
 }
 
 .elem {
@@ -221,7 +221,7 @@ html, body {
     }
 
     #text-content::-webkit-scrollbar-thumb {
-        background-color: orangered;
+        background-color: #ffffff;
     }
 
     .elem {

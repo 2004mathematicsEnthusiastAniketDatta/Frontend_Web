@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIDS</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+        }
+        html,body{
+        height: 100%;
+        width: 100%;
+        overflow:hidden;
+        scroll-behavior: smooth;
+        
+        }
+        #main{
+            height: 100%;
+            width:100%;
+            background-color: lightblue;
+            /* display: flex; /*single-dimensional property */
+            /* flex-direction: row; Main axis: row axis and cross-axis:perpendicular to main axis:  column axis.
+            justify-content: space-evenly;
+            align-items: center; */ 
+            display: grid;/*two-dimensional property as display grid  divides the elements into rows and columns*/
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: 33.33% 33.33% 33.33%;
+            align-items: center;
+            justify-items: center;
+            
+        }
+        .elem{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(236, 151, 41);
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="elem" id="elem1" style="display: flex; justify-content:center; align-items: center;">1</div>
+        <div class="elem" id="elem2" style="display: flex;
+        justify-content: center;
+        align-items: center;">2</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">3</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">4</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">5</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">6</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">7</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">8</div>
+        <div class="elem" id="elem3" style="display: flex;
+        justify-content: center;
+        align-items: center;">9</div>
+    </div>
+</body>
+</html>
