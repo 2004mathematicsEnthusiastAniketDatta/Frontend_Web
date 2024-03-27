@@ -236,8 +236,9 @@ html, body {
     }
 
     .elem h1 {
+        padding: 25px;
         /* font-size: 130px; */
-        font-size: 24vw;
+        font-size: 12vw;
         white-space: nowrap;
         font-weight: 300;
     }
