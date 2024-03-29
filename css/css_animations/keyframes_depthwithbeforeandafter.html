@@ -17,9 +17,24 @@
         overflow:hidden;
         scroll-behavior: smooth;
         }
+        h1::after{
+            content: ":)";
+            color: skyblue;
+            font-size: 50px;
+        }
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+        }
+       #box::after{
+        content:" Red";
+       }
     </style>
 </head>
 <body>
-    
+    <h1>Hello World</h1>
+    <div id="box">box</div>
 </body>
 </html>
