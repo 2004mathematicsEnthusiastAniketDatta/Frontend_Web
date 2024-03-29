@@ -21,7 +21,7 @@
             height: 100%;
             width: 100%;
         }
-       #main img{
+       /* #main img{
             position: absolute;
             top: 50%;
             left: 50%;
@@ -51,12 +51,51 @@
             100%{
                 transform: translate(-50%,-50%) rotate(360deg);
             }
+        } */
+        .box{
+            height: 200px;
+            width: 200px;
+            /* animation: move 2s infinite; */
         }
+        #box1{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: move;
+            animation-duration:2s;
+            animation-delay:1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0.1,0.7,1,0.1);
+        }
+        #box2{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            position:relative;
+            animation-name: move;
+            animation-duration:2s;
+            animation-delay:0.5s;
+            /* z-index: 1; */
+            animation-fill-mode: forwards;
+        }
+        @keyframes move{
+            from{
+                left:0;
+            }
+            to{
+                left:80%;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div id="main">
-        <img src="https://imgs.search.brave.com/4-Tqo63o-TbtSObMWsTfbwiBxcVwr0wrnZ1ixwTGr5w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/a2luZHBuZy5jb20v/cGljYy9tLzExMS0x/MTE3NTcyX2NodXRr/aS1jaHV0a2ktZ2ly/bC1jYXJ0b29uLXBu/Zy10cmFuc3BhcmVu/dC1wbmcucG5n" alt="chutki" srcset="" height="150px" width="150px">
+        <!-- <img src="https://imgs.search.brave.com/4-Tqo63o-TbtSObMWsTfbwiBxcVwr0wrnZ1ixwTGr5w/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/a2luZHBuZy5jb20v/cGljYy9tLzExMS0x/MTE3NTcyX2NodXRr/aS1jaHV0a2ktZ2ly/bC1jYXJ0b29uLXBu/Zy10cmFuc3BhcmVu/dC1wbmcucG5n" alt="chutki" srcset="" height="150px" width="150px"> -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
     </div>
 </body>
 </html>
