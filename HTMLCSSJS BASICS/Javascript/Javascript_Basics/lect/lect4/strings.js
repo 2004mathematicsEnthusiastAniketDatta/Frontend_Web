@@ -12,3 +12,9 @@ console.log(gameName.length);//6
 console.log(gameName.__proto);//undefined
 console.log(gameName.charAt(2));//i
 console.log(gameName.indexOf('i'));//2
+
+
+const newString = gameName.substring(0,4) //creating a substring  
+console.log(newString);//anik
+const newSlicedString = gameName.slice(-3,-1) //negative indexing possible in string slicing
+console.log(newSlicedString);
