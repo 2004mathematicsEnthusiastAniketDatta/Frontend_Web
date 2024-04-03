@@ -17,3 +17,6 @@ let userOne={
     email:"user@gmail.com",
     upi:"user@okpnbbank",
     }
+let userTwo=userOne;
+userTwo.email="aniket@gmail.com";
+console.log(userTwo);
