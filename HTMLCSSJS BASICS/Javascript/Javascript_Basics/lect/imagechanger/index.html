@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Images</title>
+  </head>
+  <body>
+    <img
+      id="first"
+      src="https://imgs.search.brave.com/BCfkZvHvJ3-bbLJZUZXOBaXkTo24iUIhzgztmXv6YP8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by9iZWF1dGlmdWwt/bmF0dXJlLWFpZ2Vu/ZXJhdGVkLXdhbGxw/YXBlcl85NTA4MDkt/MjQuanBnP3NpemU9/NjI2JmV4dD1qcGc"
+      alt=""
+      srcset=""
+      height="150px"
+      width="150px"
+    />
+    <img
+      id="second"
+      src="https://imgs.search.brave.com/foVcg2F_5O5GbESRYGoUGbyimhwtpsCE3JJlXRHU73g/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJzLmNvbS9p/bWFnZXMvZmVhdHVy/ZWQvbmF0dXJlLTJ5/Z3Y3c3N5MmswbHhs/enUuanBn"
+      alt=""
+      srcset=""
+      height="150px"
+      width="150px"
+    />
+    <button id="btn">Click here</button>
+    <script>
+      let img1 = document.querySelector("#first");
+      let img2 = document.querySelector("#second");
+      let btn = document.querySelector("#btn");
+      btn.addEventListener("click", function () {
+        let src1 = img1.src;
+        let src2 = img2.src;
+        img1.src = src2;
+        img2.src = src1;
+
+        
+      });
+    </script>
+  </body>
+</html>
