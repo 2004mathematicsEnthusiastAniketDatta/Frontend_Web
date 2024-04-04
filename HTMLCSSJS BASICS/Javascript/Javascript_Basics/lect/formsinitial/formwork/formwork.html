@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form-work</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h4 id="error"></h4>
     <form action="" id="inpform">
-        
+      <label for="inp1">User Id:</label>
+      <input type="text" name="inp1" id="inp1" />
+      <label for="inp2">Password:</label>
+      <input type="text" name="inp2" id="inp2" />
+      <button type="submit">Submit</button>
     </form>
-</body>
+    <script>
+      let inpform = document.querySelector("#inpform");
+      let inp1 = document.querySelector("#inp1".value);
+      let inp2 = document.querySelector("#inp2".value);
+      let inps = document.querySelectorAll("input[type='text']");
+      let h4=document.querySelector("h4");
+      inpform.addEventListener("submit", function (e) {
+        e.preventDefault();
+        // console.log(inps.length);
+        for (let i = 0; i < inps.length; i++) {
+          if (inps[i].value.trim() == "") {
+            h4.textContent = "Error,some fields are blank";
+            h4.style.color = "red";
+            break;
+          }
+        }
+      });
+    </script>
+  </body>
 </html>
