@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="syncasync.js"></script>
+  </head>
+  <body>
+    <script>
+      // Synchronous mein code works line by line
+      console.log("Hello");
+      console.log("World");
+      console.log("JavaScript");
+
+      // Asynchronous not line by line ,all async code is started and whichever task is completed first is executed first
+      setTimeout(() => {
+        console.log("Hello");
+      }, 1000);
+      setTimeout(() => {
+        console.log("World");
+      }, 2000);
+      setTimeout(() => {
+        console.log("JavaScript");
+      }, 3000);
+    </script>
+    <script src="syncasync.js"></script>
+  </body>
+</html>
