@@ -76,30 +76,31 @@ fetch(`https://jsonplaceholder.typicode.com/posts`)
 
 //Callback: 
 
+//callback functions are passed as an arguement when asynchronous code is received
 
-
-
-
+function abcd(a,b){
+    b();
+}
+abcd(10,function(){console.log("Callback called")});
 
 
 //Promises: Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. Promises are one way to deal with asynchronous code, without writing too many callbacks.s are used when we don't know how much time it will take to execute the code.s are used when we don't know how much time it will take to execute the code.
-// the above are required when time is required 
+// the above are required when time is required to execute the code
 
+//(kucch code socho man mein jo ki async code ho,matlab ki yeh side stack mein jaayega aur baad mein main stack ke,ab yeh socho ki aapne is code ko likha hain toh iska answer kabhi aayega aur aisa bhi ho sakta hain ki answer na aaye, promises kya hain aisa samjho ki aap promise ke andar koi bhi async code likhdo jo man mein aaye aur promise aapko ek paarchi de deta hain aur wo parchi par by default waiting likha hota hain,parchi par mainly two events likha hota hain ek event ka naam hain then  aur ek event ka naam  haib catch, agar aapka data aagaya toh parchi par resolved likha aayenge then chalega , agar data meindikkat aayega and waiting ki jagah rejected likha aayega).
+//(aman raghav ke paas gaya aur bola ki khaane lene vejdo kisiko raaghav ne kisi ko bhej diya and aman ko bola yeh parchi lelo jab bhi woh banda aajayega toh paarchi par chal gaya if meal not coming paarchi will have rejected written on them).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const work= new Promise(function(resolved,rejected){
+// fetch(`https://randomuser.me/api/`).then(rawres=>rawres.json).then((data)=>{
+//     if(data.data[0].gender === undefined) resolved();
+//     else rejected();
+// });
+// });
+// work.then(function(){
+//     console.log("resolved");
+// }).catch(){
+//     console.log("rejected");
+// }
 //Async/Await
 //Event Loop
 //Callbacks vs Promises vs Async/Await
