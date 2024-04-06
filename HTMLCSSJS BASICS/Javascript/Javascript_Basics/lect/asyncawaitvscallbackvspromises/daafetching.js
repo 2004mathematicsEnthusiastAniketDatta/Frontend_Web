@@ -9,5 +9,11 @@ dataFetcher(`https://jsonplaceholder.typicode.com/posts`, `https://jsonplacehold
 })
 
 async function dataFetcher2(url) {
-   let d=await fetch(url)    
+   let datas = await fetch(url);
+   let resulting = await datas.json();  
+   return resulting;  
 }
+
+dataFetcher2(`https://jsonplaceholder.typicode.com/posts`)
+
+//promises 
