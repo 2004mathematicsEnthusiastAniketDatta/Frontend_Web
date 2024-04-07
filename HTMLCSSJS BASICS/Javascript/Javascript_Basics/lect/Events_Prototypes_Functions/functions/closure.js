@@ -24,14 +24,22 @@
 // console.log(fnc());
 // console.log(fnc());
 "use strict";
-function abcd(){
-    let a =12;
-    return function xyz(){
-        console.log(a);
-    }
-      xyz();
-     console.log(a);
-}
+// function abcd(){
+//     let a =12;
+//     return function xyz(){
+//         console.log(a);
+//     }
+//       xyz();
+//      console.log(a);
+// }
 
-let b=abcd();
-console.log(b);
+// let b=abcd();
+// console.log(b);
+
+function timer(){
+    return setTimeout(function(){
+        console.log(12);
+    },2000);
+}
+timer();
+
