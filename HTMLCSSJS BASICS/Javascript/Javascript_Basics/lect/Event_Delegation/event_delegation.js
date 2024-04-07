@@ -9,5 +9,4 @@ parent.addEventListener("click",function(event){
    else if(event.target.id == 'pause'){
     console.log('Pause');
    }
-
 });
