@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document</title>
+  </head>
+  <body>
+    <div id="main">
+      <button id="button" aria-label="button">click</button>
+    </div>
+    <script src="this.js"></script>
+    <script>
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", function () {
+        console.log(this); //button element
+      });
+    </script>
+  </body>
+</html>
