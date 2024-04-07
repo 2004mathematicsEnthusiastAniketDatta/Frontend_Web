@@ -95,5 +95,5 @@ fnc(); //window
  window.x(); //window object
 //thus , this depends on how the function is called during runtime binding
 // this is a reference to the object that is executing the current function or the current code block. 
-//
+// 
 
