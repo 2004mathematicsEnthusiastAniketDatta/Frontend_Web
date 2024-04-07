@@ -72,4 +72,28 @@ const Ans = new Add(); // new blank object
       console.log(this); //button element
       })*/
 
-      
+// this inside DOM
+"use strict";
+
+console.log(this); //{}
+
+//this in strict mode is undefined
+//this in non strict mode is window object
+
+function fnc(){
+    console.log(this); //window
+}
+fnc(); //window
+
+//this substitution : if the value of this keyword is undefined or null , this keyword will be replaced with global object (window object) only in non-strict mode
+ //this keyword value depends on how the function is called 
+
+ function x(){
+    console.log(this);
+ }
+ x(); //undefined  i.e, when the function is called without the reference of any object then this keyword is undefined
+ window.x(); //window object
+//thus , this depends on how the function is called during runtime binding
+//
+
+
