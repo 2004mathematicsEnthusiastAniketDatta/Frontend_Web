@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event listening and handling</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+        }
+        html,body{
+        height: 100%;
+        width: 100%;
+        scroll-behavior: smooth;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+        }
+        #parent{
+            width:100%;
+            min-height: 100vh;
+            background:linear-gradient(135deg,#153677,#4e085f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:2rem;
+        }
+        .elem{
+            width: 100%;
+            max-width: 540px;
+            background-color: #fff;
+            border-radius: 10px;
+            /* position: relative; */
+        }
+        .row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 20px;
+            margin-bottom: 25px;
+            background-color: #edeef0;
+            border-radius: 20px;
+            margin-right: 5px;
+        }
+        input{
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 10px;
+            font-weight:14px;
+        }
+        button{
+            border: none;
+            outline:none;
+            padding: 16px 50px;
+            background: #ff5945;
+            color:#ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        ul li{
+            list-style:none;
+            font-size: 17px;
+            padding: 12px 8px 12px 50px;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        ul li::before{
+            content:'';
+            position: absolute;
+            height:28px;
+            width: 28px;
+            border-radius: 50%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="parent">
+        <div class="elem">
+         <h1 style="text-align: center;">TO DO LIST</h1>
+         <div class="row">
+            <label for="inputbox"></label>
+            <input type="text" name="inputbox" id="inputbox"  placeholder="Add new task..." required>
+            <button>add</button>
+         </div>
+         <ul id="list-container">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+         </ul>
+        </div>
+    </div>
+    <script src="./addEventListener.js"></script>
+</body>
+</html>
