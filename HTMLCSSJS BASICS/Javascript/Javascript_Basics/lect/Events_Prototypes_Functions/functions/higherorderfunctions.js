@@ -8,3 +8,6 @@ setTimeout(salary,300)
 
 const mySalaries=[20,30,40,20,300,400];
 mySalaries.filter(n => n > 50)
+
+() => {}
+// (func) => {}
