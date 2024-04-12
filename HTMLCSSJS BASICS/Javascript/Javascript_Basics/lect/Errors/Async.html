@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HandlingaAsynchronousOperations</title>
+    <style>
+        *{
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        box-sizing: border-box;
+        }
+        html,body{
+        height: 100%;
+        width: 100%;
+        scroll-behavior: smooth;
+        }
+        #main{
+            height: 100%;
+            width: 100%;
+        }
+        #search{
+            background-color:  rgb(104, 98, 98);
+            color: #ffffff;
+            border: 2px solid grey;
+            border-radius: 10px;
+        }
+    </style>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body>
     <div id="main" class="w-full h-screen bg-zinc-900 text-white font-['gilroy']">
-     <div id="cardz" class="card w-60 p-4 rounded-md  bg-zinc-700" >
+        <label for="search"></label>
+        <input type="text" name="search" id="search" placeholder="Search" required >
+     <div id="cardz" class="card w-60 p-4 m-5 rounded-md  bg-zinc-700" >
+        
         <h3 class="font-semibold text-2xl" >some Name</h3>
         <h5 class="text-sm font-semibold opacity-60">some Gender</h5>
         <h6 >some@examplemail.com</h6>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse accusantium nesciunt dolorum quo veniam.</p>
+
      </div>
     </div>
     <script src="./async.js"></script>
