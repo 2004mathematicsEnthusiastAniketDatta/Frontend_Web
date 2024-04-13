@@ -15,4 +15,12 @@ function signUpUser(username: string, email: string, password:string , ispaid : 
     console.log('Is Paid:', ispaid);
 };
 signUpUser('john', 'john@gmail.com','123456', true);
+
+
+//Arrow functions
+ let add = (a: number, b: number) => a + b;
+console.log(add(7,8));
+
+
 export{}
+
