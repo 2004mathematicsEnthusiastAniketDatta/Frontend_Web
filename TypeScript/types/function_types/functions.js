@@ -17,3 +17,6 @@ function signUpUser(username, email, password, ispaid) {
 }
 ;
 signUpUser('john', 'john@gmail.com', '123456', true);
+//Arrow functions
+var add = function (a, b) { return a + b; };
+console.log(add(7, 8));
