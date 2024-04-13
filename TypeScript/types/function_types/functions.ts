@@ -37,5 +37,14 @@ var getHello = function (s) {
 };
 const heroes =["thor","spiderman","ironman","captain america"];
 heroes.map(hero => console.log(`Hero Name: ${hero}`));
+function consoleError(errmsg: string): void {
+    console.error(`This is an error message ${errmsg}`);
+}
+consoleError("404 Not Found");
+
+function fail(msg : string): never {
+    throw new Error(msg);
+}
+fail("Something went wrong")
 export{}
 
