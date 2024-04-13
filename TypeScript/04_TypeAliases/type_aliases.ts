@@ -9,10 +9,10 @@ type User = {
 }
 
 // type Mystring = string;
-function createUser(user: User){
+function createUserz(user: User){
     return  user;
 
 }
-console.log(createUser({name: "John", age: 25, email: " john@gmail.com ", password:"123456" , isActive: true}));
+console.log(createUserz({name: "John", age: 25, email: " john@gmail.com ", password:"123456" , isActive: true}));
 
 
