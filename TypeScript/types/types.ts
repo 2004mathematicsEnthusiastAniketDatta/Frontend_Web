@@ -1,3 +1,16 @@
 let num: number = 5;
 console.log(num); // 5
+
+let userId: number = 334455.3;
+userId.toPrecision(2); // 3.3e+5
+
+let isLoggedIn : boolean = true;
+isLoggedIn.valueOf(); // true
+
+let greeting: string = "Hello World!";
+greeting.toLowerCase();
+console.log(greeting);
+
+
 export{}
+
