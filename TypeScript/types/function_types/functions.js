@@ -35,3 +35,11 @@ var getHello = function (s) {
 };
 var heroes = ["thor", "spiderman", "ironman", "captain america"];
 heroes.map(function (hero) { return console.log("Hero Name: ".concat(hero)); });
+function consoleError(errmsg) {
+    console.error("This is an error message ".concat(errmsg));
+}
+consoleError("404 Not Found");
+function fail(msg) {
+    throw new Error(msg);
+}
+fail("Something went wrong");
