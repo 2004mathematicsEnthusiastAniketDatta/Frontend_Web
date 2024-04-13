@@ -25,7 +25,7 @@ console.log(createUser(User));
 function createCourse():{}{
     return{name: "Reactjs" , price: 70}
 }
-
+createCourse();
 
 
 
