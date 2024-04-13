@@ -20,3 +20,6 @@ signUpUser('john', 'john@gmail.com', '123456', true);
 //Arrow functions
 var add = function (a, b) { return a + b; };
 console.log(add(7, 8));
+var multiply;
+multiply = function (a, b) { return a * b; };
+console.log(multiply(7, 8));
