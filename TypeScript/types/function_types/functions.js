@@ -33,3 +33,5 @@ var myVal;
 var getHello = function (s) {
     return "";
 };
+var heroes = ["thor", "spiderman", "ironman", "captain america"];
+heroes.map(function (hero) { return console.log("Hero Name: ".concat(hero)); });
