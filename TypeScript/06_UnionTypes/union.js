@@ -15,3 +15,7 @@ function getDbId(id) {
     console.log("db id is ".concat(id));
 }
 getDbId(1234);
+var data1 = [1, 2, 3, 4, 5];
+var data2 = ["1", "2", "3", "4", "5"];
+console.log(data1);
+console.log(data2);
