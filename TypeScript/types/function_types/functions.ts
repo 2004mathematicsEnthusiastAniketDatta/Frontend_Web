@@ -30,5 +30,8 @@ let myVal;
 //   } 
 //   return 200 ; 
 // };
+const getHello = (s : string) : string => {
+    return ""
+} 
 export{}
 
