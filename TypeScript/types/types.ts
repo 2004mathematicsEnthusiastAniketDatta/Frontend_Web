@@ -12,5 +12,13 @@ greeting.toLowerCase();
 console.log(greeting);
 
 
+// let hero; //hero: any
+let hero: string;
+function getHero() {
+  return  "Batman";
+}
+hero= getHero();
+console.log(hero);
+
 export{}
 
