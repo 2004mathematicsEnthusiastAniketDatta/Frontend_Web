@@ -23,5 +23,15 @@ console.log(add(7,8));
 let multiply: (a: number, b: number) => number;
  multiply  = (a: number, b: number) => a * b;
 console.log(multiply(7,8));
+let myVal;
+// functiom getValue(myVal:number){
+//   if (myVal > 5){
+//     return 404;
+//   } 
+//   return 200 ; 
+// };
+const getHello = (s : string) : string => {
+    return ""
+} 
 export{}
 

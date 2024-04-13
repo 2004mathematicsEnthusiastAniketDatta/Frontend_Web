@@ -23,3 +23,13 @@ console.log(add(7, 8));
 var multiply;
 multiply = function (a, b) { return a * b; };
 console.log(multiply(7, 8));
+var myVal;
+// functiom getValue(myVal:number){
+//   if (myVal > 5){
+//     return 404;
+//   } 
+//   return 200 ; 
+// };
+var getHello = function (s) {
+    return "";
+};
