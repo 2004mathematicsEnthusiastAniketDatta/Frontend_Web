@@ -30,8 +30,12 @@ let myVal;
 //   } 
 //   return 200 ; 
 // };
-const getHello = (s : string) : string => {
-    return ""
-} 
+
+
+var getHello = function (s) {
+    return "";
+};
+const heroes =["thor","spiderman","ironman","captain america"];
+heroes.map(hero => console.log(`Hero Name: ${hero}`));
 export{}
 
