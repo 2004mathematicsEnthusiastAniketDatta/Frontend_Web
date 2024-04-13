@@ -23,3 +23,4 @@ console.log(add(7, 8));
 var multiply;
 multiply = function (a, b) { return a * b; };
 console.log(multiply(7, 8));
+var myVal;
