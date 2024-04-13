@@ -22,5 +22,11 @@ function createUser({  age: number, name,email : string, isActive:boolean}){
     isActive: true};
 }
 console.log(createUser(User));
+function createCourse():{}{
+    return{name: "Reactjs" , price: 70}
+}
+
+
+
 
 export {};
