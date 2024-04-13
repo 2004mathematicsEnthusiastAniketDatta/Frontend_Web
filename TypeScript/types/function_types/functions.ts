@@ -20,7 +20,8 @@ signUpUser('john', 'john@gmail.com','123456', true);
 //Arrow functions
  let add = (a: number, b: number) => a + b;
 console.log(add(7,8));
-
-
+let multiply: (a: number, b: number) => number;
+ multiply  = (a: number, b: number) => a * b;
+console.log(multiply(7,8));
 export{}
 
