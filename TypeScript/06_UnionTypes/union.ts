@@ -32,3 +32,8 @@ function getDbId(id: number | string){
     
 }
 getDbId(1234);
+
+const data1: number[] | string[] = [1,2,3,4,5];
+const data2: number[] | string[] = ["1","2","3","4","5"];
+console.log(data1);
+console.log(data2);
