@@ -1,0 +1,1 @@
+# Typescript Docs ( official resource ) : https://www.typescriptlang.org/
