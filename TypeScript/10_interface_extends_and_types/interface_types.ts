@@ -17,7 +17,7 @@ interface Admin extends User {
     role: "admin" | "ta" | "learner";
 }
 
-const typescriptor: User = {dbId:1234 ,email: "typescriptor@.js" , userId: 2211,starting(){
+const typescriptor: Admin = {dbId:1234 ,email: "typescriptor@.js" , userId: 2211,starting(){
     return "Starting";
 },getCoupon(couponname: string){return 10;}};
 
