@@ -1,7 +1,12 @@
-var typescriptor = { dbId: 1234, email: "typescriptor@.js", userId: 2211, starting: function () {
-        return "Starting";
-    }, getCoupon: function (couponname) { return 10; } };
-typescriptor.email = "typescriptor@.ts";
-console.log(typescriptor);
-console.log(typescriptor.getCoupon("typescriptor"));
-console.log(typescriptor.starting());
+var point = {
+    x: 10,
+    y: 20,
+};
+console.log(point.x);
+console.log(point.y);
+var person = {
+    name: "John Doe",
+    age: 25,
+};
+console.log(person.name);
+console.log(person.age);

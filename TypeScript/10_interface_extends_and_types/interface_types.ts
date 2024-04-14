@@ -1,27 +1,27 @@
-interface User {
-    readonly dbId: number;
-    email: string;
-    userId: number;
-    // startTrial: () => string; in typescriptor startTrial() =>{
-//     return "Trial started";
-// }
-    starting(): string;
-    getCoupon(couponname: string): number;
-}
+// type.ts 
+type Point = { 
+	x: number; 
+	y: number; 
+}; 
 
-interface User {
-    githubToken : string;
-}
+const point: Point = { 
+	x: 10, 
+	y: 20, 
+}; 
 
-interface Admin extends User {
-    role: "admin" | "ta" | "learner";
-}
+console.log(point.x); 
+console.log(point.y);
 
-const typescriptor: Admin = {dbId:1234 ,email: "typescriptor@.js" , userId: 2211,starting(){
-    return "Starting";
-},getCoupon(couponname: string){return 10;}};
+// Interface.ts 
+interface Person { 
+	name: string; 
+	age: number; 
+} 
 
-typescriptor.email = "typescriptor@.ts";
-console.log(typescriptor);
-console.log(typescriptor.getCoupon("typescriptor"));
-console.log(typescriptor.starting());
+const person: Person = { 
+	name: "John Doe", 
+	age: 25, 
+}; 
+
+console.log(person.name); 
+console.log(person.age);
