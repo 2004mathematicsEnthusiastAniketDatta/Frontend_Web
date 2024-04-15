@@ -33,3 +33,4 @@ var User = /** @class */ (function () {
     return User;
 }());
 var user = new User("user@gmail.com", "user");
+console.log(user);

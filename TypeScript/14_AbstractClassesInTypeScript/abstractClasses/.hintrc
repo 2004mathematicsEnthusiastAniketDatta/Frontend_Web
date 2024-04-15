@@ -1,0 +1,32 @@
+{
+  "extends": [
+    "@tsconfig/node-lts/tsconfig.json",
+    "@tsconfig/strictest/tsconfig.json"
+  ],
+  "connector": "jsdom", // Specify the connector (e.g., jsdom, chrome)
+  "formatters": [
+    "stylish"
+  ], // Choose a formatter (e.g., stylish, summary)
+  "hints": {
+    "no-disallowed-headers": "error", // Example hint with custom severity
+    "manifest-exists": "off" // Disable a specific hint
+  },
+  "parsers": [
+    "html",
+    "css"
+  ], // Specify parsers (e.g., html, css, js)
+  "ignoreUrls": [
+    "https://example.com"
+  ], // URLs to ignore during scanning
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.ts"
+      ], // Apply specific settings to TypeScript files
+      "parser": "@typescript-eslint/parser",
+      "rules": {
+        "@typescript-eslint/no-unused-vars": "error"
+      }
+    }
+  ]
+}

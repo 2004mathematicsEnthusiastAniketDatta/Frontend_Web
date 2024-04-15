@@ -25,3 +25,4 @@ class User {
 }
 const  user = new User("user@gmail.com", "user");
 
+console.log(user);
