@@ -1,17 +1,17 @@
-"use noImplicitAny";
 "use strict";
+"use noImplicitAny";
 Object.defineProperty(exports, "__esModule", { value: true });
-var num = 5;
+let num = 5;
 console.log(num); // 5
-var userId = 334455.3;
+let userId = 334455.3;
 userId.toPrecision(2); // 3.3e+5
-var isLoggedIn = true;
+let isLoggedIn = true;
 isLoggedIn.valueOf(); // true
-var greeting = "Hello World!";
+let greeting = "Hello World!";
 greeting.toLowerCase();
 console.log(greeting);
 // let hero; //hero: any
-var hero;
+let hero;
 function getHero() {
     return "Batman";
 }
