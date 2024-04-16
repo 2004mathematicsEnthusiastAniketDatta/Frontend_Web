@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // function createUser(user: User){
 //     return user;
 // }
-var myUser = {
+let myUser = {
     _id: "1245",
     name: "John",
     email: "john@reddifmail.com",

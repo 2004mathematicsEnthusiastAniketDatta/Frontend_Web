@@ -18,12 +18,12 @@ function signUpUser(username, email, password, ispaid) {
 ;
 signUpUser('john', 'john@gmail.com', '123456', true);
 //Arrow functions
-var add = function (a, b) { return a + b; };
+let add = (a, b) => a + b;
 console.log(add(7, 8));
-var multiply;
-multiply = function (a, b) { return a * b; };
+let multiply;
+multiply = (a, b) => a * b;
 console.log(multiply(7, 8));
-var myVal;
+let myVal;
 // functiom getValue(myVal:number){
 //   if (myVal > 5){
 //     return 404;
@@ -33,10 +33,10 @@ var myVal;
 var getHello = function (s) {
     return "";
 };
-var heroes = ["thor", "spiderman", "ironman", "captain america"];
-heroes.map(function (hero) { return console.log("Hero Name: ".concat(hero)); });
+const heroes = ["thor", "spiderman", "ironman", "captain america"];
+heroes.map(hero => console.log(`Hero Name: ${hero}`));
 function consoleError(errmsg) {
-    console.error("This is an error message ".concat(errmsg));
+    console.error(`This is an error message ${errmsg}`);
 }
 consoleError("404 Not Found");
 function fail(msg) {

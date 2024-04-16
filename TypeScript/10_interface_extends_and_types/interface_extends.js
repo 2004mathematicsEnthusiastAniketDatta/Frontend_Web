@@ -1,13 +1,14 @@
+"use strict";
 function printLabel(labeledObj) {
     console.log(labeledObj.label);
 }
-var myObj = { size: 10, label: "Size 10 Object" };
+let myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);
 function printLabel(labeledObj) {
     console.log(labeledObj.label);
 }
 function createSquare(config) {
-    var newSquare = { color: "white", area: 100 };
+    let newSquare = { color: "white", area: 100 };
     if (config.color) {
         newSquare.color = config.color;
     }
@@ -16,6 +17,6 @@ function createSquare(config) {
     }
     return newSquare;
 }
-var mySquare = createSquare({ color: "black" });
-var myObj = { size: 10, label: "Size 10 Object" };
+let mySquare = createSquare({ color: "black" });
+let myObj = { size: 10, label: "Size 10 Object" };
 printLabel(myObj);

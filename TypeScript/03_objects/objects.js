@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var User = {
+const User = {
     name: "John",
     age: 30,
     email: "john@example.com",
@@ -14,8 +14,7 @@ var User = {
 // age: 30,
 // email: "john@example.com",
 // isActive: true})
-function createUser(_a) {
-    var number = _a.age, name = _a.name, string = _a.email, boolean = _a.isActive;
+function createUser({ age: number, name, email: string, isActive: boolean }) {
     return { name: "John",
         age: 30,
         email: "john@example.com",
